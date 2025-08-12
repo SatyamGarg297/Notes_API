@@ -5,6 +5,28 @@ Provides CRUD operations for creating, reading, updating and deleting notes.
 
 ---
 
+## Table of Contents
+- [Live Demo](#live-demo)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Prerequisites](#prerequisites)
+- [Installation & Setup](#installation--run)
+- [API Endpoints](#api-endpoints)
+- [Error Handling Examples](#error-handling-examples)
+- [Folder Structure](#folder-structure)
+- [Testing](#testing)
+- [Possible Improvements / Next Steps](#possible-improvements)
+- [Author](#author)
+
+---
+
+## Live Demo
+
+You can access the live API here:  
+[Notes API on Render](https://notes-api-xjz0.onrender.com/api/notes)
+
+---
+
 ## Features
 - Create, read, update, delete notes
 - Validations for required fields
