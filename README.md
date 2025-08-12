@@ -10,12 +10,12 @@ Provides CRUD operations for creating, reading, updating and deleting notes.
 - [Features](#features)
 - [Tech Stack](#tech-stack)
 - [Prerequisites](#prerequisites)
-- [Installation & Setup](#installation--run)
+- [Installation & Setup](#installation--setup)
 - [API Endpoints](#api-endpoints)
 - [Error Handling Examples](#error-handling-examples)
 - [Folder Structure](#folder-structure)
 - [Testing](#testing)
-- [Possible Improvements / Next Steps](#possible-improvements)
+- [Possible Improvements / Next Steps](#possible-improvements--next-steps)
 - [Author](#author)
 
 ---
