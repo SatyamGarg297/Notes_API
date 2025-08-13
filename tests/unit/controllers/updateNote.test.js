@@ -1,8 +1,8 @@
-const { updateNote } = require("../controllers/NotesController");
-const Note = require("../models/Note");
+const { updateNote } = require("../../../controllers/NotesController");
+const Note = require("../../../models/Note");
 
 // Mock the Mongoose model methods
-jest.mock("../models/Note");
+jest.mock("../../../models/Note");
 
 // Helper function to simulate req and res objects
 const mockResponse = () => {

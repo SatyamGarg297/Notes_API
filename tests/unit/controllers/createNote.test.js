@@ -30,8 +30,8 @@
 
 
 // noteController.test.js
-const { createNote } = require('../controllers/NotesController');
-const Note = require('../models/Note');
+const { createNote } = require('../../../controllers/NotesController');
+const Note = require('../../../models/Note');
 
 describe('createNote Controller', () => {
   let req, res, saveMock;

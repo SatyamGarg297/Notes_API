@@ -198,6 +198,7 @@ Base path: `/api/notes`
 ```
 backend/
 ├── server.js
+├── app.js 
 ├── config/
 │   └── db.js
 ├── controllers/
@@ -206,14 +207,19 @@ backend/
 │   └── Note.js
 ├── routes/
 │   └── NoteRoute.js
-├── tests/                          
-│   ├── createNote.test.js          
-│   ├── deleteNote.test.js          
-│   ├── getAllNote.test.js           
-│   ├── getSingleNote.test.js        
-│   ├── updateNote.test.js           
-│ 
-├── .env
+├── tests/
+│   ├── integration/
+│   │   └── notes.test.js   
+│   └── unit/
+│       ├── controllers/
+│       │   ├── createNote.test.js
+│       │   ├── deleteNote.test.js
+│       │   ├── getAllNote.test.js
+│       │   ├── getSingleNote.test.js
+│       │   └── updateNote.test.js
+│       └── models/
+│           └── Note.test.js
+├── .env   
 ├── jest.config.js
 ├── .gitignore
 └── README.md

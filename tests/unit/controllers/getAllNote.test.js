@@ -1,9 +1,9 @@
 // tests/getAllNote.test.js
-const { getAllNote } = require('../controllers/NotesController');
-const Note = require('../models/Note');
+const { getAllNote } = require('../../../controllers/NotesController');
+const Note = require('../../../models/Note');
 
 // Mock the Note model so no real DB calls happen
-jest.mock('../models/Note');
+jest.mock('../../../models/Note');
 
 describe('getAllNote Controller', () => {
   let req, res;

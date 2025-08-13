@@ -1,18 +1,9 @@
-const express = require("express");
+// server.js
 require("dotenv").config();
 const connectDB = require("./config/db");
-const bodyParser = require("body-parser");
+const app = require("./app");
 
-const app = express();
 const PORT = process.env.PORT || 3000;
-
-app.use(bodyParser.json()); // req.body
-
-// Import the router files
-const NotesRoutes = require("./routes/NoteRoute");
-
-// use the routers
-app.use("/api/notes", NotesRoutes);
 
 connectDB()
   .then(() => {

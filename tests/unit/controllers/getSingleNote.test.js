@@ -1,9 +1,9 @@
 // Import the controller and dependencies
-const { getSingleNote } = require('../controllers/NotesController');
-const Note = require('../models/Note');
+const { getSingleNote } = require('../../../controllers/NotesController');
+const Note = require('../../../models/Note');
 
 // Mock the Note model
-jest.mock('../models/Note');
+jest.mock('../../../models/Note');
 
 describe('getSingleNote Controller', () => {
   let req, res;

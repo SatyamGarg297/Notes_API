@@ -1,7 +1,7 @@
-const { deleteNote } = require('../controllers/NotesController');
-const Note = require('../models/Note');
+const { deleteNote } = require('../../../controllers/NotesController');
+const Note = require('../../../models/Note');
 
-jest.mock('../models/Note'); // Mock Note model
+jest.mock('../../../models/Note'); // Mock Note model
 
 // helper to mock req, res
 const mockResponse = () => {
