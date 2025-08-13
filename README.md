@@ -11,6 +11,7 @@ Provides CRUD operations for creating, reading, updating and deleting notes.
 - [Tech Stack](#tech-stack)
 - [Prerequisites](#prerequisites)
 - [Installation & Setup](#installation--setup)
+- [Testing & Coverage](#testing--coverage)
 - [API Endpoints](#api-endpoints)
 - [Error Handling Examples](#error-handling-examples)
 - [Folder Structure](#folder-structure)
@@ -82,6 +83,34 @@ npm run dev
 npm run start
 ```
 - API server runs at http://localhost:5000 (or PORT you set)
+
+---
+
+## Testing & Coverage
+
+This project includes comprehensive **unit tests** for the Note API controllers using **Jest**.  
+The test coverage report ensures that all functions, statements, branches, and lines are fully tested.
+
+### Running Tests
+```bash
+npm run test
+```
+
+### Running Tests with Coverage Report
+```bash
+npm run test:coverage
+```
+
+### Coverage Summary
+| File                 | % Stmts | % Branch | % Funcs | % Lines |
+|----------------------|---------|----------|---------|---------|
+| **All files**        | 100     | 100      | 100     | 100     |
+| controllers          | 100     | 100      | 100     | 100     |
+| NotesController.js   | 100     | 100      | 100     | 100     |
+| models               | 100     | 100      | 100     | 100     |
+| Note.js              | 100     | 100      | 100     | 100     |
+
+> Achieved **100% coverage** across all files.
 
 ---
 
@@ -177,7 +206,15 @@ backend/
 │   └── Note.js
 ├── routes/
 │   └── NoteRoute.js
+├── tests/                          
+│   ├── createNote.test.js          
+│   ├── deleteNote.test.js          
+│   ├── getAllNote.test.js           
+│   ├── getSingleNote.test.js        
+│   ├── updateNote.test.js           
+│ 
 ├── .env
+├── jest.config.js
 ├── .gitignore
 └── README.md
 ```
